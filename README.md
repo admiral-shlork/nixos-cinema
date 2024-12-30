@@ -7,12 +7,12 @@ See `fileSystems` config for the host and create necessary partitions. For exist
 
 ## Installation
 
-1. Boot NixOS from a Live CD
+1. Boot NixOS from a Live USB
 
-2. Enter shell with git and vim:
+2. Enter shell with git and vscodium:
 
 ```bash
-nix --extra-experimental-features "nix-command flakes" shell nixpkgs#git nixpkgs#vim
+nix --extra-experimental-features "nix-command flakes" shell nixpkgs#git nixpkgs#vscodium
 ```
 3. Mount all required partitions under `/mnt`.
 
@@ -21,19 +21,21 @@ nix --extra-experimental-features "nix-command flakes" shell nixpkgs#git nixpkgs
 4. Clone the repo with the configuration:
 
 ```bash
-git clone ${clone_url_here}
+git clone git@github.com:admiral-shlork/nixos-cinema.git
+# or
+git clone https://github.com/admiral-shlork/nixos-cinema.git
 ```
 
 5. To install the OS run the following command from the root folder of the cloned repository:
 
 ```bash
-sudo nixos-install --no-root-passwd --root /mnt  --flake .#cinema
+sudo nixos-install --root /mnt  --flake .#cinema
 ```
 
 6. Set a password for the user:
 
 ```bash
-nixos-enter --root /mnt -c 'passwd whatever'
+nixos-enter --root /mnt -c 'passwd blah'
 ```
 
 ## Some useful Nix commands:
@@ -47,6 +49,7 @@ sudo nixos-rebuild switch --flake .#cinema
 - Remove older generations from the bootloader
 ```bash
 nix-collect-garbage --delete-older-than 1d
+nh clean all --keep 3 
 sudo nixos-rebuild boot --flake .#cinema
 ```
 

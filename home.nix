@@ -9,9 +9,9 @@
 
   # Home Manager configuration options go here
   home = {
-    username = "whatever";
-    homeDirectory = "/home/whatever";
-    stateVersion = "24.05";
+    username = "blah";
+    homeDirectory = "/home/blah";
+    stateVersion = "24.11";
     packages = with pkgs; [
       # audacity
       # calibre

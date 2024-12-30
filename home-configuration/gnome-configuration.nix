@@ -100,22 +100,7 @@
         no-overview.extensionUuid
       ];
     };
-    # Dash-to-panel extension preferences
-    "org/gnome/shell/extensions/dash-to-panel" = {
-      panel-sizes = "{\"0\":34}";
-      appicon-padding = 1;
-      panel-positions = "{\"0\":\"TOP\"}";
-      panel-element-positions = ''
-      {"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centered"},{"element":"centerBox","visible":false,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}
-      '';
-      dot-position = "BOTTOM";
-      dot-style-focused = "SQUARES";
-      dot-style-unfocused = "SQUARES";
-      scroll-icon-action = "PASS_THROUGH";
-      scroll-panel-action = "CHANGE_VOLUME";
-      trans-panel-opacity = 0.00;
-      trans-use-custom-opacity = true;
-    };
+
     # Date-menu-formatter preferences
     "org/gnome/shell/extensions/date-menu-formatter" = {
       pattern = "EEEE - d MMMM, yyyy - HH:mm:ss";

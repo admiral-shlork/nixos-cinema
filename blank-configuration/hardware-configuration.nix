@@ -2,7 +2,6 @@
 
 {
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  virtualisation.virtualbox.guest.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
