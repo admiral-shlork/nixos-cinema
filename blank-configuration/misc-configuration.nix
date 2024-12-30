@@ -28,10 +28,20 @@
   users.users.blah = {
     isNormalUser = true;
     description = "blah";
+    createHome = true;
+    home = "/home/blah";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     ];
   };
+
+  services.displayManager = {
+    autoLogin.enable = true;
+    autoLogin.user = "blah";
+  };
+
+  systemd.services."getty@tty1".enable = false;
+  systemd.services."autovt@tty1".enable = false;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

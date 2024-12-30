@@ -1,5 +1,5 @@
 {
-  description = "whatever Flake";
+  description = "blah Flake";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.11";
@@ -27,7 +27,7 @@
             ./configuration.nix
             home-manager.nixosModules.home-manager {
               home-manager = {
-                users.whatever = import ./home.nix;
+                users.blah = import ./home.nix;
                 useGlobalPkgs = true;
                 useUserPackages = true;
               };

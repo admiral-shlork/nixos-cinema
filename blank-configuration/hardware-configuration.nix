@@ -3,6 +3,10 @@
 {
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
+  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.enableRedistributableFirmware = true;
+  hardware.graphics.enable = true;
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 

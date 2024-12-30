@@ -25,8 +25,9 @@
       # evince
       # firefox-devedition
       # gimp
-      gnome.gnome-screenshot
+      gnome-screenshot
       # jetbrains.pycharm-community
+      jellyfin-media-player
       # keepassxc
       # libreoffice
       # librewolf
@@ -48,7 +49,7 @@
       # virtualbox
       # vivaldi
       # veracrypt
-      # vlc
+      vlc
       # yacreader
     ];
     # shellAliases = {

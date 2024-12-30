@@ -21,26 +21,6 @@
     "org/gnome/system/location" = {
       enabled = false;
     };
-    # Nautilus preferences
-    "org/gnome/nautilus/preferences" = {
-      date-time-format = "datailed";
-      default-folder-view = "list-view";
-      show-create-link = true;
-      show-delete-permanently = true;
-    };
-    "org/gnome/nautilus/icon-view" = {
-      captions = [ "size" "type" "none" ];
-    };
-    "org/gnome/nautilus/list-view" = {
-      default-column-order = [ "name" "size" "type" "owner" "group" "permissions" "date_modified" "date_accessed" "date_created" "recency" "detailed_type" ];
-      default-visible-columns = [ "name" "size" "type" "owner" "group" "permissions" "date_modified"] ;
-      use-tree-view = true;
-    };
-    # Desktop background
-    "org/gnome/desktop/background" = {
-      picture-options = "none";
-      primary-color = "#282828";
-    };
     # Disable lock screen and notifications
     "org/gnome/desktop/notifications" = {
       show-in-lock-screen = false;
@@ -51,43 +31,6 @@
     "org/gnome/desktop/screensaver" = {
       lock-enabled = false;
       idle-activation-enabled = false;
-    };
-    # Show weekday in calendar
-    "org/gnome/desktop/calendar" = {
-      show-weekdate = true;
-    };
-    # Titlebar customisation, set number of workspaces to 1
-    "org/gnome/desktop/wm/preferences" = {
-      button-layout = "close:appmenu";
-      action-right-click-titlebar = "minimize";
-      action-middle-click-titlebar = "lower";
-      num-workspaces = 1;
-    };
-    # Enable active edges for window tiling
-    "org/gnome/mutter" = {
-      edge-tiling = true;
-    };
-    # Disable nightlight
-    "org/gnome/settings-daemon/plugins/color" = {
-      night-light-enabled = false;
-      night-light-schedule-automatic = false;
-    };
-    # Power settings
-    "org/gnome/settings-daemon/plugins/power" = {
-      idle-dim = false;
-      power-button-action = "interactive";
-      sleep-inactive-ac-timeout = 900;
-      sleep-inactive-ac-type = "nothing";
-    };
-    # Keyboard bindings
-    "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" ];
-      screensaver = [ "<Control><Super>q" ];
-    };
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      binding = "<Super>e";
-      command = "/run/current-system/sw/bin/nautilus --new-window";
-      name = "Nautilus";
     };
     # Enabled extensions
     "org/gnome/shell" = {
@@ -103,7 +46,7 @@
 
     # Date-menu-formatter preferences
     "org/gnome/shell/extensions/date-menu-formatter" = {
-      pattern = "EEEE - d MMMM, yyyy - HH:mm:ss";
+      pattern = "EEEE  -  d  MMMM  -  HH:mm:ss";
       text-align = "right";
       update-level = "2";
     };
@@ -116,5 +59,9 @@
     };
     # Sound preferences
     "org/gnome/desktop/sound".allow-volume-above-100-percent = true;
-  };  
+    # Fractional scaling in Gnome
+    "org/gnome/mutter" = {
+      experimental-features = [ "scale-monitor-framebuffer" ];
+    };
+  };
 }
