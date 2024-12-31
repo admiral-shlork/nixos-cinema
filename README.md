@@ -65,6 +65,8 @@ sudo nixos-rebuild boot --flake .#cinema
 - Update the flake.lock file and rebuild the system
 ```bash
 nix flake update
+```
+```bash
 sudo nixos-rebuild switch --flake .#cinema
 ```
 
