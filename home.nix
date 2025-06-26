@@ -35,7 +35,6 @@
       # mangohud
       # megasync
       moonlight-qt
-      nerdfonts
       # obsidian
       # parsec-bin
       # protonvpn-gui
