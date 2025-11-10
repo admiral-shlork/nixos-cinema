@@ -44,10 +44,10 @@
       # steam
       # telegram-desktop
       # thunderbird
-      # ungoogled-chromium
+      ungoogled-chromium
       # winbox
       # virtualbox
-      # vivaldi
+      vivaldi
       # veracrypt
       vlc
       # yacreader
