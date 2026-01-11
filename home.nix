@@ -44,7 +44,6 @@
       # steam
       # telegram-desktop
       # thunderbird
-      ungoogled-chromium
       # winbox
       # virtualbox
       vivaldi
