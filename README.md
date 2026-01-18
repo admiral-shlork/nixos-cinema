@@ -9,7 +9,7 @@ See `fileSystems` config for the host and create necessary partitions. For exist
 
 1. Boot NixOS from a Live USB
 
-2. Enter shell with git and vim:
+2. Enter shell with git and vscodium:
 
 ```bash
 nix --extra-experimental-features "nix-command flakes" shell nixpkgs#git nixpkgs#vscodium
