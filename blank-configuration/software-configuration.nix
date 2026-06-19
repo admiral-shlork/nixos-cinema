@@ -71,6 +71,7 @@
       moonlight-qt
       nh
       pciutils
+      plezy
       vim
       vivaldi
       vlc
