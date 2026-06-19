@@ -12,50 +12,7 @@
     username = "blah";
     homeDirectory = "/home/blah";
     stateVersion = "24.11";
-    packages = with pkgs; [
-      # audacity
-      # calibre
-      # deadbeef-with-plugins
-      # deluge-gtk
-      # discord
-      # docker
-      # dropbox
-      # easytag
-      # element-desktop
-      # evince
-      # firefox-devedition
-      # gimp
-      gnome-screenshot
-      # jetbrains.pycharm-community
-      jellyfin-media-player
-      # keepassxc
-      # libreoffice
-      # librewolf
-      # lutris
-      # mangohud
-      # megasync
-      moonlight-qt
-      # obsidian
-      # parsec-bin
-      # protonvpn-gui
-      # signal-desktop
-      # soulseekqt
-      # soundconverter
-      # steam
-      # telegram-desktop
-      # thunderbird
-      # winbox
-      # virtualbox
-      vivaldi
-      # veracrypt
-      vlc
-      # yacreader
-    ];
-    # shellAliases = {
-    #   ll="ls -alhF";
-    #   la="ls -A";
-    #   l="ls -CF";
-    # };
+    packages = with pkgs; [ ];
   };
   programs.bash = {
     enable = true;
