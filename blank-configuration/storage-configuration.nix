@@ -8,7 +8,7 @@
       systemd.enable = true;
     };
     kernelModules = [ "kvm-amd" ];
-    kernelPackages = pkgs.linuxPackages_latest;
+    # kernelPackages = pkgs.linuxPackages_latest;
     extraModulePackages = [ ];
     loader = {
       systemd-boot.enable = true;
