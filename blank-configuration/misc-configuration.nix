@@ -35,7 +35,7 @@
     description = "blah";
     createHome = true;
     home = "/home/blah";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "docker" "kubernetes" "networkmanager" "wheel" ];
     packages = with pkgs; [
     ];
   };
