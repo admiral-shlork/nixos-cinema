@@ -55,6 +55,7 @@ nix-collect-garbage --delete-older-than 1d
 ```bash
 sudo nixos-rebuild boot --flake .#cinema
 ```
+or
 ```bash
 nh clean all --keep 2
 ```
